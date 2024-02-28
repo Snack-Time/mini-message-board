@@ -1,3 +1,9 @@
 extends layout 
 
 block content
+    form(method='POST', action='/new')
+        label(for='name')= 'Enter your name'
+        input(type='text', name='name')
+        label(for='text')= 'Enter your message'
+        input(type='text', name='text')
+        button(type='submit')="Submit"
