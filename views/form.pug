@@ -1,9 +1,10 @@
 extends layout 
 
 block content
+    h1="Enter Message Below"
     form(method='POST', action='/new')
-        label(for='name')= 'Enter your name'
+        label(for='name')= 'Enter your name: '
         input(type='text', name='name' required)
-        label(for='text')= 'Enter your message'
-        input(type='text', name='text' required)
+        label(for='text')= 'Enter your message: '
+        input(type='text', name='text' style="width: 600px" required)
         button(type='submit')="Submit"
