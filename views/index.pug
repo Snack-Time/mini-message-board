@@ -2,10 +2,10 @@ extends layout
 
 block content
   h1= title
-  a(href="/new")= "Add your own message"
+  a(class="link" href="/new")= "Add your own message"
   ul
     each message in messages
-      div
-        li= message.text 
-        li= message.user 
-        li= message.date
+      div(class="message-box")
+        h2(class="message")= message.text 
+        li(class="user")= message.user 
+        li(class="date")= message.date

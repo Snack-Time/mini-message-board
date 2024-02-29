@@ -3,6 +3,41 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a {
-  color: #00B7FF;
+h1 {
+  text-align: center;
 }
+
+ul, .message-box {
+  display: grid;
+}
+
+.message-box {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1.5fr 1fr;
+  margin-bottom: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  padding-left: 10px;
+}
+
+.message, .user, .date, .link {
+  display: flex;
+}
+
+.link {
+  justify-content: center;
+  color: #0000EE;
+}
+
+.link:hover {
+  color: red;
+}
+
+.message {
+  grid-column-start: span 4;
+  align-items: center;
+}
+
+.date {
+  grid-column-start: 3;
+}
+

@@ -3,7 +3,7 @@ extends layout
 block content
     form(method='POST', action='/new')
         label(for='name')= 'Enter your name'
-        input(type='text', name='name')
+        input(type='text', name='name' required)
         label(for='text')= 'Enter your message'
-        input(type='text', name='text')
+        input(type='text', name='text' required)
         button(type='submit')="Submit"
